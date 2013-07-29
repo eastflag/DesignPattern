@@ -19,7 +19,7 @@ public abstract class Page {
             Writer writer = new FileWriter(filename);
             writer.write(this.makeHTML());
             writer.close();
-            System.out.println(filename + " �� �ۼ��߽��ϴ�.");
+            System.out.println(filename + " 을 작성했습니다.");
         } catch (IOException e) {
             e.printStackTrace();
         }
