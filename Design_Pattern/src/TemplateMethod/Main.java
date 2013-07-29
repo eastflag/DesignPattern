@@ -2,9 +2,9 @@ package TemplateMethod;
 
 public class Main {
     public static void main(String[] args) {
-	// 'H'을 가진 CharDisplay 인스턴스를 1개 만든다>
+	    // 'H'을 가진 CharDisplay 인스턴스를 1개 만든다>
         AbstractDisplay d1 = new CharDisplay('H');
-	// “Hello, world.”을 가진 StringDisplay의 인스턴스를 1개 만든다.
+	    // “Hello, world.”을 가진 StringDisplay의 인스턴스를 1개 만든다.
         AbstractDisplay d2 = new StringDisplay("Hello, world.");
     	// “안녕하세요.”를 가진 StringDisplay의 인스턴스를 1개 만든다.
         AbstractDisplay d3 = new StringDisplay("안녕하세요.");
