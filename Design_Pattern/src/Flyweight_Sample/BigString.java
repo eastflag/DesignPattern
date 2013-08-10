@@ -1,8 +1,8 @@
 package Flyweight_Sample;
 public class BigString {
-    // ��ū ���ڡ�
+    // 「큰 문자」
     private BigChar[] bigchars;
-    // ����
+    // 생성자
     public BigString(String string) {
         bigchars = new BigChar[string.length()];
         BigCharFactory factory = BigCharFactory.getInstance();
@@ -10,7 +10,7 @@ public class BigString {
             bigchars[i] = factory.getBigChar(string.charAt(i));
         }
     }
-    // ǥ��
+    // 표시
     public void print() {
         for (int i = 0; i < bigchars.length; i++) {
             bigchars[i].print();
