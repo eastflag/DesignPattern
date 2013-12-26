@@ -1,4 +1,4 @@
-package HeadFirst.observer;
+package HeadFirst.factory.pizzafm;
 
 public abstract class PizzaStore {
  

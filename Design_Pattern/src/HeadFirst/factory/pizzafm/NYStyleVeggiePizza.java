@@ -1,4 +1,4 @@
-package HeadFirst.observer;
+package HeadFirst.factory.pizzafm;
 
 public class NYStyleVeggiePizza extends Pizza {
 
