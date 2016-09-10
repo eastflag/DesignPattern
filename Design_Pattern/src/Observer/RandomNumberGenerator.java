@@ -1,4 +1,4 @@
-package Observer_Sample;
+package Observer;
 import java.util.Random;
 
 public class RandomNumberGenerator extends NumberGenerator {

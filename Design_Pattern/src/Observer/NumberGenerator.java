@@ -1,17 +1,17 @@
-package Observer_Sample;
+package Observer;
 import java.util.ArrayList;
 import java.util.Iterator;
 
 public abstract class NumberGenerator {
-    private ArrayList<Observer> observers = new ArrayList<Observer>();     // Observer들을 저장
+    private ArrayList<Observer> mObservers = new ArrayList<Observer>();     // Observer들을 저장
     public void addObserver(Observer observer) {    // Observer을 추가
-        observers.add(observer);
+        mObservers.add(observer);
     }
     public void deleteObserver(Observer observer) {  // Observer을 삭제
-        observers.remove(observer);
+        mObservers.remove(observer);
     }
     public void notifyObservers() {                  // Observer에 통지
-        Iterator<Observer> it = observers.iterator();      
+        Iterator<Observer> it = mObservers.iterator();      
         while (it.hasNext()) {                 
             Observer o = (Observer)it.next();  
             o.update(this);                   

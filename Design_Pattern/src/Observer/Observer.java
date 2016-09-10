@@ -1,4 +1,4 @@
-package Observer_Sample;
+package Observer;
 public interface Observer {
     public abstract void update(NumberGenerator generator);
 }
