@@ -1,7 +1,7 @@
 package Observer;
-public class DigitObserver implements Observer {
-    public void update(NumberGenerator generator) {
-        System.out.println("DigitObserver:" + generator.getNumber());
+public class ConsoleClient implements Client {
+    public void update(WeatherGenerator generator) {
+        System.out.println("ConsoleClient:" + generator.getTemperature());
         try {
             Thread.sleep(100);
         } catch (InterruptedException e) {

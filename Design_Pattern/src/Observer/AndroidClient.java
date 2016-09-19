@@ -1,8 +1,8 @@
 package Observer;
-public class GraphObserver implements Observer {
-    public void update(NumberGenerator generator) {
-        System.out.print("GraphObserver:");
-        int count = generator.getNumber();
+public class AndroidClient implements Client {
+    public void update(WeatherGenerator generator) {
+        System.out.print("AndroidClient:");
+        int count = generator.getTemperature();
         for (int i = 0; i < count; i++) {
             System.out.print("*");
         }

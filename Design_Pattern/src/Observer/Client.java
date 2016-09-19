@@ -1,4 +1,4 @@
 package Observer;
-public interface Observer {
-    public abstract void update(NumberGenerator generator);
+public interface Client {
+    public abstract void update(WeatherGenerator generator);
 }
